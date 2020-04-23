@@ -16,8 +16,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|text|null: false|
-|text|text|null: false|
+|groups_name|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :messages
@@ -27,7 +26,8 @@
 ## massagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|body|text|null: false|
+|image|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
