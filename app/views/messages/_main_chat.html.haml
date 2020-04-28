@@ -1,0 +1,30 @@
+.Chat-main
+  .Chat-main__group-info
+    .Chat-main__group-info__test-box
+      test
+      .Chat-main__group-info__test-box__side
+        Member:masa
+    .Chat-main__group-info__box
+      .Chat-main__group-info__box__edit
+        = link_to "#" do
+          Edit
+      
+  .Chat-main__message-list
+    .Chat-main__message-list__name
+      masa
+    .Chat-main__message-list__days
+      2020/04/27(Mon) 
+    .Chat-main__message-list__message
+      こんにちは
+  .Chat-main__message-form
+    .Chat-main__message-form__type-box
+      .Chat-main__message-form__type-box__text
+        type a message
+      .Chat-main__message-form__type-box__image
+        %label{class: "type-box__image"}
+          %i.fa.fa-image
+          %input{type: "file"}
+        
+    .Chat-main__message-form__send-box
+      = link_to "#" do
+        Send
