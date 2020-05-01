@@ -43,18 +43,26 @@
     &__group-list {
       width: 300px;
       height: calc(100vh - 100px);
-      background-color: #2f3e51;;
-      color: #ffffff;
+      background-color: #2f3e51;
+      text-decoration: none;
       
+     
       &__name {
         padding: 20px 20px 5px;
         font-size: 15px;
+        color: #ffffff;
       }
 
       &__message {
         padding: 0 20px;
         font-size: 11px;
+        color: #ffffff;
       }
+        a {
+        text-decoration: none;
+      }
+      
+      
     }
   }
 
@@ -127,51 +135,54 @@
     &__message-form {
       background-color: #d2d2d2;
       height: 90px;
-      width: calc(100vw - 300px);
-      display: flex;
-      align-items: center;
+      
       padding: 20px 40px;
-
-      &__type-box {
+      
+      .new_message {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        background-color: #ffffff;
-        height: 50px;
-        position: relative;
-
-
-        &__text {
-          height: 50px;
-          width: 100%;
-          margin: 0 10px;
-          line-height: 50px;
-        }
-        &__image {
-          position: absolute; 
-          right: 10px;
-          top: 10px;
-          a {
-
-          }
-          label input {
-            display: none;
-          }
-        }
-      }
-
-      &__send-box {
-        width: 100px;
-        height: 50px;
-        background-color: #38aef0;
-        margin-left: 15px;
         
-        text-align: center;
-        line-height: 50px;
-        padding: 0px 30px;
-        a {
-          color: #fafafa;
-          text-decoration: none;
+        .Chat-main__message-form__type-box {
+          width: 100%;
+          position: relative;
+
+          input {
+            height: 50px;
+            width: 100%;
+            padding: 0 40px 0 10px;
+            background-color: #ffffff;
+            border: none;
+            
+          }
+
+          &__image {
+            position: absolute; 
+            right: 10px;
+            top: 15px;
+            cursor: pointer;
+            
+            label input {
+              display: none;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .Chat-main__message-form__send-box {
+          width: 100px;
+          height: 50px;
+          background-color: #38aef0;
+          margin-left: 15px;
+          text-align: center;
+          line-height: 50px;
+          padding: 0px 30px;
+          cursor: pointer;
+
+          input {
+            border: none;
+            background-color: #38aef0;
+            color: #fafafa;
+            cursor: pointer;
+          }
         }
       }
     }

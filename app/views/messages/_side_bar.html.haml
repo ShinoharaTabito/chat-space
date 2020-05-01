@@ -11,7 +11,8 @@
             %i.fa.fa-cog
   .Side-bar__group-list
     - current_user.groups.each do |group|
-      .Side-bar__group-list__name
-        = group.name
-      .Side-bar__group-list__message
-        message no
+      = link_to group_messages_path(group) do
+        .Side-bar__group-list__name
+          = group.name
+        .Side-bar__group-list__message
+          = group.show_last_message
