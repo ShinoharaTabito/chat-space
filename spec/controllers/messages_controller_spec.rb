@@ -52,7 +52,6 @@ describe MessagesController do
         }
 
         it 'messageを保存すること' do
-          binding.pry
           expect{ subject }.to change(Message, :count).by(1)
         end
 
