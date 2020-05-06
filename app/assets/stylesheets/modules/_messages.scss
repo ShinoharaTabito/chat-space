@@ -61,8 +61,6 @@
         a {
         text-decoration: none;
       }
-      
-      
     }
   }
 
@@ -107,28 +105,18 @@
         }
       }
     }
-
-    &__message-list {
+    
+    .messages {
+      overflow: scroll;
       height: calc(100vh - 90px - 100px);
       width: calc(100vw - 300px);
       background-color: #fafafa;
       padding: 35px 40px;
 
-      &__name {
-        color: #333333;
-        font-size: 16px;
-        float: left;
-      }
-      &__days {
-        color: #999999;
-        font-size: 12px;
-        margin-left: 52px;
-      }
-
-      &__message {
+      .message {
         color: #434a54;
         font-size: 14px;
-        margin-top: 12px;
+        margin-top: 20px;
       }
     }
 
