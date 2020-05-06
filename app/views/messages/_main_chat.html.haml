@@ -10,14 +10,8 @@
       .Chat-main__group-info__box__edit
         = link_to 'Edit',edit_group_path(@group) 
 
-  .Chat-main__message-list
-    .Chat-main__message-list__name
-      masa
-    .Chat-main__message-list__days
-      2020/04/27(Mon) 
-    .Chat-main__message-list__message
-      .messages
-        = render @messages
+  .messages
+    = render @messages
 
   .Chat-main__message-form
     = form_for [@group, @message] do |f|
