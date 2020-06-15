@@ -8,10 +8,8 @@
     .Chat-main__group-info__box
       .Chat-main__group-info__box__edit
         = link_to 'Edit',edit_group_path(@group) 
-
   .messages
     = render @messages
-
   .Chat-main__message-form
     = form_for [@group, @message] do |f|
       .Chat-main__message-form__type-box
